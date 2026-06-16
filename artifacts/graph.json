@@ -1,0 +1,862 @@
+{
+  "metadata": {
+    "tool": "local-ast-grphify",
+    "source_root": "C:\\Users\\Aisha\\Desktop\\AI\\uoh-ay26-gaphify-obcidian-reverse-engineering\\src"
+  },
+  "nodes": [
+    {
+      "id": "gaphify_re/agent_workflow.py::InvestigationState",
+      "kind": "class",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "InvestigationState",
+      "centrality": 1
+    },
+    {
+      "id": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "kind": "function",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "build_langgraph_workflow",
+      "centrality": 6
+    },
+    {
+      "id": "gaphify_re/agent_workflow.py::choose_suspects",
+      "kind": "function",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "choose_suspects",
+      "centrality": 0
+    },
+    {
+      "id": "gaphify_re/agent_workflow.py::explain_fix",
+      "kind": "function",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "explain_fix",
+      "centrality": 0
+    },
+    {
+      "id": "gaphify_re/agent_workflow.py::inspect_suspects",
+      "kind": "function",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "inspect_suspects",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/agent_workflow.py::load_graph_context",
+      "kind": "function",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "load_graph_context",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/agent_workflow.py::run_workflow",
+      "kind": "function",
+      "file": "gaphify_re/agent_workflow.py",
+      "name": "run_workflow",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/cli.py::main",
+      "kind": "function",
+      "file": "gaphify_re/cli.py",
+      "name": "main",
+      "centrality": 11
+    },
+    {
+      "id": "gaphify_re/domain.py::ProjectPlan",
+      "kind": "class",
+      "file": "gaphify_re/domain.py",
+      "name": "ProjectPlan",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/domain.py::Task",
+      "kind": "class",
+      "file": "gaphify_re/domain.py",
+      "name": "Task",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.add",
+      "kind": "method",
+      "file": "gaphify_re/domain.py",
+      "name": "add",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.roots",
+      "kind": "method",
+      "file": "gaphify_re/domain.py",
+      "name": "roots",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/domain.py::gaphify_re/domain.py::Task.finish_time",
+      "kind": "method",
+      "file": "gaphify_re/domain.py",
+      "name": "finish_time",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::CodeNode",
+      "kind": "class",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "CodeNode",
+      "centrality": 1
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::_Visitor",
+      "kind": "class",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "_Visitor",
+      "centrality": 7
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::_call_name",
+      "kind": "function",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "_call_name",
+      "centrality": 1
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::build_graph",
+      "kind": "function",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "build_graph",
+      "centrality": 11
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.__init__",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "__init__",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "_id",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "_rel",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "_with_scope",
+      "centrality": 4
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "visit_Call",
+      "centrality": 4
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "visit_ClassDef",
+      "centrality": 5
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "kind": "method",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "visit_FunctionDef",
+      "centrality": 6
+    },
+    {
+      "id": "gaphify_re/graph_builder.py::write_graph",
+      "kind": "function",
+      "file": "gaphify_re/graph_builder.py",
+      "name": "write_graph",
+      "centrality": 4
+    },
+    {
+      "id": "gaphify_re/parser.py::ParseError",
+      "kind": "class",
+      "file": "gaphify_re/parser.py",
+      "name": "ParseError",
+      "centrality": 0
+    },
+    {
+      "id": "gaphify_re/parser.py::_meaningful_lines",
+      "kind": "function",
+      "file": "gaphify_re/parser.py",
+      "name": "_meaningful_lines",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/parser.py::parse_plan",
+      "kind": "function",
+      "file": "gaphify_re/parser.py",
+      "name": "parse_plan",
+      "centrality": 7
+    },
+    {
+      "id": "gaphify_re/parser.py::parse_task_line",
+      "kind": "function",
+      "file": "gaphify_re/parser.py",
+      "name": "parse_task_line",
+      "centrality": 7
+    },
+    {
+      "id": "gaphify_re/scheduler.py::CycleError",
+      "kind": "class",
+      "file": "gaphify_re/scheduler.py",
+      "name": "CycleError",
+      "centrality": 0
+    },
+    {
+      "id": "gaphify_re/scheduler.py::schedule",
+      "kind": "function",
+      "file": "gaphify_re/scheduler.py",
+      "name": "schedule",
+      "centrality": 2
+    },
+    {
+      "id": "gaphify_re/scheduler.py::topological_order",
+      "kind": "function",
+      "file": "gaphify_re/scheduler.py",
+      "name": "topological_order",
+      "centrality": 9
+    },
+    {
+      "id": "gaphify_re/token_meter.py::ReadingMode",
+      "kind": "class",
+      "file": "gaphify_re/token_meter.py",
+      "name": "ReadingMode",
+      "centrality": 1
+    },
+    {
+      "id": "gaphify_re/token_meter.py::compare_modes",
+      "kind": "function",
+      "file": "gaphify_re/token_meter.py",
+      "name": "compare_modes",
+      "centrality": 5
+    },
+    {
+      "id": "gaphify_re/token_meter.py::estimate_tokens",
+      "kind": "function",
+      "file": "gaphify_re/token_meter.py",
+      "name": "estimate_tokens",
+      "centrality": 3
+    },
+    {
+      "id": "gaphify_re/token_meter.py::measure_paths",
+      "kind": "function",
+      "file": "gaphify_re/token_meter.py",
+      "name": "measure_paths",
+      "centrality": 5
+    }
+  ],
+  "edges": [
+    {
+      "source": "gaphify_re/agent_workflow.py::InvestigationState",
+      "target": "field",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "target": "RuntimeError",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "target": "StateGraph",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "target": "add_edge",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "target": "add_node",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "target": "compile",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::build_langgraph_workflow",
+      "target": "set_entry_point",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::inspect_suspects",
+      "target": "append",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::inspect_suspects",
+      "target": "estimate_tokens",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::inspect_suspects",
+      "target": "read_text",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::load_graph_context",
+      "target": "append",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::load_graph_context",
+      "target": "estimate_tokens",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::load_graph_context",
+      "target": "read_text",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::run_workflow",
+      "target": "InvestigationState",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/agent_workflow.py::run_workflow",
+      "target": "step",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "ArgumentParser",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "add_argument",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "compare_modes",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "cwd",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "len",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "parse_args",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "parse_plan",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "print",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "run_workflow",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "schedule",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/cli.py::main",
+      "target": "write_graph",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/domain.py::ProjectPlan",
+      "target": "field",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/domain.py::ProjectPlan",
+      "target": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.add",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/domain.py::ProjectPlan",
+      "target": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.roots",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/domain.py::Task",
+      "target": "dataclass",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/domain.py::Task",
+      "target": "gaphify_re/domain.py::gaphify_re/domain.py::Task.finish_time",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.add",
+      "target": "ValueError",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/domain.py::gaphify_re/domain.py::ProjectPlan.roots",
+      "target": "values",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/domain.py::gaphify_re/domain.py::Task.finish_time",
+      "target": "max",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::CodeNode",
+      "target": "dataclass",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.__init__",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_Visitor",
+      "target": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "type": "contains"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::_call_name",
+      "target": "isinstance",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "_Visitor",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "get",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "parse",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "read_text",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "rglob",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "set",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "sorted",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "str",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "update",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "values",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::build_graph",
+      "target": "visit",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.__init__",
+      "target": "set",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
+      "target": "_rel",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._id",
+      "target": "join",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
+      "target": "as_posix",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._rel",
+      "target": "relative_to",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
+      "target": "append",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
+      "target": "generic_visit",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor._with_scope",
+      "target": "pop",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
+      "target": "_call_name",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
+      "target": "add",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_Call",
+      "target": "generic_visit",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
+      "target": "CodeNode",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
+      "target": "_id",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
+      "target": "_rel",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_ClassDef",
+      "target": "_with_scope",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "target": "CodeNode",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "target": "_id",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "target": "_rel",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "target": "_with_scope",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::gaphify_re/graph_builder.py::_Visitor.visit_FunctionDef",
+      "target": "add",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::write_graph",
+      "target": "build_graph",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::write_graph",
+      "target": "dumps",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::write_graph",
+      "target": "mkdir",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/graph_builder.py::write_graph",
+      "target": "write_text",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::_meaningful_lines",
+      "target": "splitlines",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::_meaningful_lines",
+      "target": "startswith",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::_meaningful_lines",
+      "target": "strip",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "ParseError",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "ProjectPlan",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "_meaningful_lines",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "add",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "join",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "parse_task_line",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_plan",
+      "target": "sorted",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "ParseError",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "Task",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "int",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "len",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "split",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "strip",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/parser.py::parse_task_line",
+      "target": "tuple",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::schedule",
+      "target": "finish_time",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::schedule",
+      "target": "topological_order",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "CycleError",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "add",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "append",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "dict",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "issubset",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "join",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "set",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "sorted",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/scheduler.py::topological_order",
+      "target": "values",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::ReadingMode",
+      "target": "dataclass",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::compare_modes",
+      "target": "ReadingMode",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::compare_modes",
+      "target": "len",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::compare_modes",
+      "target": "measure_paths",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::compare_modes",
+      "target": "rglob",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::compare_modes",
+      "target": "sorted",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::estimate_tokens",
+      "target": "len",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::estimate_tokens",
+      "target": "max",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::estimate_tokens",
+      "target": "round",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::measure_paths",
+      "target": "estimate_tokens",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::measure_paths",
+      "target": "len",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::measure_paths",
+      "target": "read_text",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::measure_paths",
+      "target": "splitlines",
+      "type": "calls"
+    },
+    {
+      "source": "gaphify_re/token_meter.py::measure_paths",
+      "target": "strip",
+      "type": "calls"
+    }
+  ]
+}
