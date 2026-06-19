@@ -19,3 +19,7 @@ Thumbs.db
 # Assignment/reference PDFs are kept locally but not submitted to git
 ref/
 *.egg-info/
+
+# Local secrets
+.env
+.env.*

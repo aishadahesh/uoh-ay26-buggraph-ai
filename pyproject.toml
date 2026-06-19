@@ -1,13 +1,26 @@
 [project]
 name = "gaphify-obsidian-reverse-engineering"
 version = "0.1.0"
-description = "EX04 reverse engineering, graph-guided debugging, and token-efficiency evidence."
+description = "EX04 reverse engineering, graph-guided debugging, AI-agent bug finding, and token-efficiency evidence."
+readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "google-genai>=2.8.0",
+]
 
 [project.optional-dependencies]
-agent = ["langgraph>=0.2"]
-test = ["pytest>=8"]
+agent = [
+    "crewai>=0.80",
+    "langgraph>=0.2",
+]
+test = [
+    "pytest>=8",
+]
+dev = [
+    "pytest>=8",
+    "crewai>=0.80",
+    "langgraph>=0.2",
+]
 
 [project.scripts]
 gaphify-re = "gaphify_re.cli:main"

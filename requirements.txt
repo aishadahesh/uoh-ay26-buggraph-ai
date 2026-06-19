@@ -1,4 +1,10 @@
-# The project runs with the Python standard library.
-# Optional: install langgraph to execute the workflow with a real StateGraph backend.
+# Runtime dependency for the Gemini-backed AI-agent path.
+google-genai>=2.8.0
+
+# Optional agent frameworks used by adapters/documented workflows.
+# Install when you want native CrewAI or LangGraph objects instead of the deterministic local runners.
+# crewai>=0.80
 # langgraph>=0.2
+
+# Optional test runner. The included suite also works with standard-library unittest.
 # pytest>=8
