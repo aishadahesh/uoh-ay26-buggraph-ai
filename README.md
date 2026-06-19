@@ -125,6 +125,21 @@ flowchart LR
 
 The point is not to read every line blindly. The workflow first reads `obsidian/index.md`, `obsidian/hot.md`, and reports, then drills into the hot files: `mathsquiz.py`, `mathsquiz-step2.py`, `mathsquiz-step3.py`, and `polygons.py`.
 
+## Tools Used
+
+This project combines several tools and tool-inspired workflows so the bug investigation is reproducible, explainable, and token efficient.
+
+| Tool / workflow | How it is used in this project | Evidence |
+|---|---|---|
+| **Grphify-compatible graphing** | The project builds a code/evidence graph from the selected broken repository and repaired files. The graph identifies central files, hot nodes, relationships, and areas that deserve review before sending context to an AI agent. This is implemented locally through `gaphify_re` so the workflow is reproducible even if the external Grphify package is not installed in the grading environment. | `artifacts/graph.json`, `artifacts/grphify_summary.json`, `reports/GRAPH_REPORT.md` |
+| **Obsidian vault** | Obsidian-style Markdown pages act as the human navigation layer over the graph. `index.md` is the vault entry point, while `hot.md` is the focused bug-investigation page used to reduce context before deeper code reading. | `obsidian/index.md`, `obsidian/hot.md`, `obsidian/agent-workflow.md` |
+| **Gemini AI agent** | Gemini is used as the external AI bug-finding agent. Instead of sending the whole project, the CLI can send naive, graph-guided, or minimal prompt packets and save the response as submission evidence. | `src/gaphify_re/gemini_agent.py`, `artifacts/gemini_agent_result.json`, `reports/GEMINI_AGENT_REPORT.md` |
+| **CrewAI-oriented workflow** | The repository includes a CrewAI-oriented graph-first workflow that models how an agent crew would inspect graph evidence, prioritize hot files, and recommend fixes. The real CrewAI dependency is optional; the local command still demonstrates the requested agent flow. | `src/gaphify_re/crew_agent.py`, `obsidian/agent-workflow.md` |
+| **Python unittest** | Tests prove both sides of the work: the original upstream files fail in specific ways, and the fixed files behave correctly. | `tests/`, especially `tests/test_broken_python_fixed.py` |
+| **Token meter** | Token estimates compare naive, graph-guided, and minimal AI-agent context. This proves the project did not simply send everything to the model. | `src/gaphify_re/token_meter.py`, `reports/TOKEN_EFFICIENCY.md` |
+
+The important design decision is that the graph and Obsidian pages are not decorative documentation. They are used as the filter before AI-agent execution, which is why the minimal Gemini prompt can stay small while still preserving the root causes, fixes, and verification evidence.
+
 ## OOP / Design View
 
 ```mermaid
