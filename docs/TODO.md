@@ -932,8 +932,41 @@ This checklist intentionally contains 900 granular tasks for project-management 
 - [x] 899. Review evidence for: Verify graph JSON has 36 nodes
 - [x] 900. Confirm documentation mentions: Verify graph JSON has 36 nodes
 
+## Gemini Agent Persistence And README Evidence
+
+- [x] 901. Add Gemini API prompt builder
+- [x] 902. Add Gemini API execution command
+- [x] 903. Add model listing command
+- [x] 904. Handle stale Gemini model environment values
+- [x] 905. Install google-genai in local environment
+- [x] 906. Add .env.example for Gemini configuration
+- [x] 907. Ignore local .env secrets
+- [x] 908. Measure naive Gemini prompt tokens
+- [x] 909. Measure graph-guided Gemini prompt tokens
+- [x] 910. Measure minimal Gemini prompt tokens
+- [x] 911. Persist Gemini result to JSON artifact
+- [x] 912. Persist Gemini result to Markdown report
+- [x] 913. Add tests for Gemini prompt construction
+- [x] 914. Add tests for Gemini artifact persistence
+- [x] 915. Update README with Gemini setup
+- [x] 916. Update README with AI agent execution images
+- [x] 917. Add ai-agent-execution1 screenshot
+- [x] 918. Add ai-agent-execution2 screenshot
+- [x] 919. Update PRD with persisted AI-agent reports
+- [x] 920. Update PLAN with Gemini evidence flow
+- [x] 921. Update legacy PLAN_PRD with Gemini note
+- [x] 922. Update WORKLOG with Gemini evidence step
+- [x] 923. Update TOKEN_EFFICIENCY for agent prompt accounting
+- [x] 924. Update ASSIGNMENT_COMPLIANCE with Gemini evidence files
+- [x] 925. Verify Gemini prompt command remains local-only
+- [x] 926. Verify Gemini command writes report paths
+- [x] 927. Verify tests pass after Gemini persistence
+- [x] 928. Update README test count to 27
+- [x] 929. Update self score after Gemini persistence
+- [x] 930. Confirm TODO remains under 1000 tasks
+
 ## Status Legend
 
 - Checked tasks are already completed or verified in the current repository state.
 - Unchecked tasks are final review or optional polish tasks that can be revisited before submission. At this checkpoint, all tracked tasks are checked.
-- Total tracked tasks: 900.
+- Total tracked tasks: 930.
